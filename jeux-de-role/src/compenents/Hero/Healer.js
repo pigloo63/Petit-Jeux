@@ -39,8 +39,7 @@ function Healer (numberOfHeal) {
     let heal = new Heal(i, 400, 400, 10, `healer${[i+1]}`, 10, 40, 20, 20)
     healStat.push(heal)
   }
-  
-  console.log(healStat)
+
   return healStat
 }
 

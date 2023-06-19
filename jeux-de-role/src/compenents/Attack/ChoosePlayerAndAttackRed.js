@@ -6,7 +6,7 @@ import Mage from '../Hero/Mage'
 import Healer from '../Hero/Healer'
 
 export default function ChoosePlayerAndAttackRed(playersRed) {
-    console.log(playersRed[0])
+
     let playerWhoPlay = 0
     
     playerWhoPlay = ChooseARandomPlayer(playersRed[0].totalPlayers)

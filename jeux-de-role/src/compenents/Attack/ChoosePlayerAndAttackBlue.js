@@ -6,7 +6,7 @@ import Mage from '../Hero/Mage'
 import Healer from '../Hero/Healer'
 
 export default function ChoosePlayerAndAttackBlue(playersBlue) {
-    console.log(playersBlue[0])
+
     let playerWhoPlay = 0
     
     playerWhoPlay = ChooseARandomPlayer(playersBlue[0].totalPlayers)
@@ -45,8 +45,6 @@ export default function ChoosePlayerAndAttackBlue(playersBlue) {
       let minMage = 0
       let maxMage = playersBlue[0].numberOfMage
 
-      Math.ceil(minMage)
-      Math.floor(maxMage)
       chooseMage = Math.floor(Math.random() * (maxMage - minMage) + minMage)
 
       for(let i=0; i<mageBlue.length; i++){
@@ -72,8 +70,6 @@ export default function ChoosePlayerAndAttackBlue(playersBlue) {
       let minHeal = 0
       let maxHeal = playersBlue[0].numberOfHeal
 
-      Math.ceil(minHeal)
-      Math.floor(maxHeal)
       chooseHeal = Math.floor(Math.random() * (maxHeal - minHeal) + minHeal)
 
       for(let i=0; i<healerBlue.length; i++){
@@ -82,13 +78,11 @@ export default function ChoosePlayerAndAttackBlue(playersBlue) {
         }
       }
 
-      console.log(chooseHeal)
-      console.log(healAttack)
       healDamage = PhysicalAttack(healAttack)
 
       console.log('je suis un Heal')
 
-      return console.log(healDamage)
+      return healDamage
    }
 
 }

@@ -22,11 +22,9 @@ function Mage (numberOfMage) {
   for(let i=0; i<numberOfMage; i++){
     let mage = new Mage(i, 450, 450, 10, `mage${[i+1]}`, 25, 60, 20, 40)
     mageStat.push(mage)
-    console.log(mage)
   }
-    
-    console.log(mageStat)
-    return mageStat
+
+  return mageStat
 }
 
 export default Mage

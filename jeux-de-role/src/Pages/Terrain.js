@@ -75,7 +75,7 @@ const Terrain = () => {
                         </div>
                     </div>
                     <div>
-                        <ResolveAttack playersBlue={playerBlue} playersRed={playerBlue}/>
+                        <ResolveAttack playersBlue={playerBlue} playersRed={playerRed}/>
                     </div>
                 </div>}
         </main>
